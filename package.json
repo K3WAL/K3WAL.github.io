@@ -1,3 +1,4 @@
+
 {
   "$schema": "https://json.schemastore.org/package",
   "name": "portfoli_kewal",
@@ -5,13 +6,16 @@
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
+ 
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest",
-    "homepage": "https://K3WAL.github.io/"
+    "homepage": "https://K3WAL.github.io/",
+    "build": "babel src --out-dir dist --extensions .jsx"
+    
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -36,9 +40,5 @@
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5",
     "vite": "^5.0.0"
-  },
-  "scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
+  }
 }
