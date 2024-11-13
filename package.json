@@ -5,13 +5,14 @@
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://K3WAL.github.io/",
   "scripts": {
     "dev": "vite",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest",
-    "homepage": "https://K3WAL.github.io/",
     "build": "vite build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
