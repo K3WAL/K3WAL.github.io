@@ -8,16 +8,11 @@
   "homepage": "https://K3WAL.github.io/",
   "scripts": {
     "start": "webpack serve --mode development",
-  "build": "webpack --mode production",
     "dev": "vite",
-<<<<<<< HEAD
-=======
     "build": "babel src --out-dir dist --extensions .jsx",
->>>>>>> 3b5a4e0edda7b62e75503b3cef1eb8f59d3dad3c
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest",
-    
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -60,4 +55,3 @@
   "keywords": [],
   "author": ""
 }
-

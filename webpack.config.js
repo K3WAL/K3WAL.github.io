@@ -1,19 +1,15 @@
-import path from "path";
-import HtmlWebpackPlugin from "html-webpack-plugin";
+const path = require("path");
 
-export default {
-  entry: "./src/index.js",
+module.exports = {
+  entry: "./src/main.jsx",
   output: {
-    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-  },
-  resolve: {
-    extensions: [".js", ".jsx"],
+    path: path.resolve(__dirname, "dist"),
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/, // Match .jsx and .js files
+        test: /\.jsx$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -21,13 +17,7 @@ export default {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./public/index.html",
-    }),
-  ],
-  devServer: {
-    contentBase: "./dist",
-    port: 3000,
+  resolve: {
+    extensions: [".js", ".jsx"],
   },
 };

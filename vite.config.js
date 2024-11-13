@@ -16,6 +16,7 @@ export default defineConfig({
   },
 
   plugins: [react()],
+  base: "/vite-deploy/",
   assetsInclude: ["**/*.glb"],
 });
 
