@@ -12,7 +12,6 @@ export default defineConfig({
   assetsInclude: ["**/*.glb"],
 
   build: {
-    outDir: "dist",
     base: "/K3WAL.github.io",
   },
 });
