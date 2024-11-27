@@ -10,6 +10,7 @@ export default defineConfig({
 
   plugins: [react()],
   assetsInclude: ["**/*.glb"],
+
   build: {
     outDir: "dist",
   },
