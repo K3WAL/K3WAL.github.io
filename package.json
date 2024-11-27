@@ -9,7 +9,7 @@
   "scripts": {
     "start": "webpack serve --mode development",
     "dev": "vite",
-    "build": "babel src --out-dir dist --extensions .jsx",
+    "build": "babel src --out-dir build --extensions .jsx",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest",
