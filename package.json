@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
-  "homepage": "https://K3WAL.github.io/K3WAL.github.io",
+  "homepage": "https://K3WAL.github.io/K3WAL.github.io/",
   "scripts": {
     "start": "webpack serve --mode development",
     "dev": "vite",
